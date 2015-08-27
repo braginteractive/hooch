@@ -1,0 +1,1223 @@
+@charset "UTF-8";
+/*!
+Theme Name: Hooch
+Theme URI: http://underscores.me/
+Author: Brad Williams
+Author URI: http://braginteractive.com
+Description: Underscores, Bourbon, and Neat
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hooch
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Hooch is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 7, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 22, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 29, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 34, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 40, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 44, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/* line 49, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 53, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 58, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 62, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 66, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 71, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 76, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 81, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 88, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 92, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 96, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 100, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 104, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 108, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 113, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 120, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 129, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 135, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 140, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 147, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 153, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 158, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 163, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 168, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 174, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 178, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+/* line 184, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 188, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 194, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 199, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 203, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 207, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 213, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+# Bourbon
+--------------------------------------------------------------*/
+/* line 1, ./bower_components/bitters/app/assets/stylesheets/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  /* line 21, ./bower_components/bitters/app/assets/stylesheets/_buttons.scss */
+  button:hover,
+  button:focus, input[type="button"]:hover,
+  input[type="button"]:focus, input[type="reset"]:hover,
+  input[type="reset"]:focus, input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  button:hover,
+  button:focus {
+    background-color: #2c5999;
+    color: #fff; }
+  /* line 26, ./bower_components/bitters/app/assets/stylesheets/_buttons.scss */
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+
+/* line 10, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+/* line 16, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  /* line 20, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+  label.required::after {
+    content: "*"; }
+  /* line 24, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 27, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple],
+textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  -webkit-transition: border-color;
+          transition: border-color;
+  width: 100%; }
+  /* line 42, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+  select[multiple=multiple]:hover,
+  textarea:hover {
+    border-color: #c4c4c4; }
+  /* line 46, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select[multiple=multiple]:focus,
+  textarea:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 53, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 57, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 62, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 67, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 72, ./bower_components/bitters/app/assets/stylesheets/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 2, ./bower_components/bitters/app/assets/stylesheets/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 20, ./bower_components/bitters/app/assets/stylesheets/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, ./bower_components/bitters/app/assets/stylesheets/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, ./bower_components/bitters/app/assets/stylesheets/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, ./bower_components/bitters/app/assets/stylesheets/_tables.scss */
+table {
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 9, ./bower_components/bitters/app/assets/stylesheets/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 16, ./bower_components/bitters/app/assets/stylesheets/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
+
+/* line 23, ./bower_components/bitters/app/assets/stylesheets/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 15, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+/* line 22, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 26, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+a {
+  color: #477dca;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+          transition: color 0.1s linear; }
+  /* line 33, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+  a:active,
+  a:focus,
+  a:hover {
+    color: #2c5999; }
+  /* line 38, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+  a:active,
+  a:focus {
+    outline: none; }
+
+/* line 43, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 52, ./bower_components/bitters/app/assets/stylesheets/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 4, ./bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 11, ./bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/modules/_accessibility.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  /* line 9, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/modules/_accessibility.scss */
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+.site-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .site-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+  .site-content .content-area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .site-content .content-area:last-child {
+      margin-right: 0; }
+  /* line 9, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+  .site-content .widget-area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0; }
+    /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .site-content .widget-area:last-child {
+      margin-right: 0; }
+
+/* line 15, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/modules/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+/* line 7, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/modules/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+/* line 13, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/modules/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.clear:before::after,
+.clear:after::after,
+.entry-content:before::after,
+.entry-content:after::after,
+.comment-content:before::after,
+.comment-content:after::after,
+.site-header:before::after,
+.site-header:after::after,
+.site-content:before::after,
+.site-content:after::after,
+.site-footer:before::after,
+.site-footer:after::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* line 21, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/modules/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+header.navigation {
+  background-color: #333;
+  border-bottom: 1px solid #1a1a1a;
+  min-height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 28, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation .navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  /* line 35, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    /* line 41, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: 0.8em 0; }
+  /* line 49, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    float: right;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 49, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 64, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation .navigation-menu-button:focus,
+    header.navigation .navigation-menu-button:hover {
+      color: white; }
+  /* line 71, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation nav {
+    float: none;
+    min-height: 60px;
+    z-index: 9999999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 71, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation nav {
+        float: left; } }
+  /* line 81, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation ul.navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    /* line 91, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation ul.navigation-menu.show {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 81, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation ul.navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 104, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation ul li.menu-item {
+    background: #333;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 104, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation ul li.menu-item {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 122, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation ul li.menu-item a {
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      text-decoration: none; }
+      @media screen and (min-width: 53.75em) {
+        /* line 122, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+        header.navigation ul li.menu-item a {
+          padding-right: 1em; } }
+      /* line 132, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation ul li.menu-item a:focus,
+      header.navigation ul li.menu-item a:hover {
+        color: white; }
+    /* line 137, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation ul li.menu-item.current_page_item a {
+      color: white; }
+  /* line 146, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation li.menu-item-has-children.menu-item {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 146, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation li.menu-item-has-children.menu-item {
+        padding-right: 1em; } }
+    /* line 153, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children.menu-item > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 157, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children.menu-item a {
+      margin-right: 1em; }
+    /* line 161, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children.menu-item > a {
+      padding-right: 0.6em; }
+    /* line 165, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children.menu-item > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE';
+      color: rgba(255, 255, 255, 0.7); }
+  /* line 174, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation li.menu-item-has-children.menu-item .sub-menu .menu-item-has-children {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 178, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children.menu-item .sub-menu .menu-item-has-children a {
+      padding-right: 0.8em; }
+    /* line 182, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children.menu-item .sub-menu .menu-item-has-children > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 182, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+        header.navigation li.menu-item-has-children.menu-item .sub-menu .menu-item-has-children > a {
+          margin-right: 1em; } }
+      /* line 190, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation li.menu-item-has-children.menu-item .sub-menu .menu-item-has-children > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+  /* line 201, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation li.menu-item-has-children {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 205, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children a {
+      padding-right: 0.8em; }
+    /* line 209, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 209, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+        header.navigation li.menu-item-has-children > a {
+          margin-right: 1em; } }
+      /* line 217, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation li.menu-item-has-children > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 226, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation li.menu-item-has-children:focus > .sub-menu,
+    header.navigation li.menu-item-has-children:hover > .sub-menu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 201, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation li.menu-item-has-children {
+        padding-right: 0.8em;
+        position: relative; } }
+  /* line 236, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation ul.sub-menu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 236, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation ul.sub-menu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 246, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation ul.sub-menu .sub-menu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 253, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation ul.sub-menu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        /* line 253, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+        header.navigation ul.sub-menu li {
+          line-height: 46.15385px; }
+          /* line 260, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+          header.navigation ul.sub-menu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 265, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+          header.navigation ul.sub-menu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: 0.7em; } }
+      /* line 272, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation ul.sub-menu li a {
+        background-color: #2b2b2b;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 272, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+          header.navigation ul.sub-menu li a {
+            background-color: #333;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+  /* line 290, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation .navigation-tools {
+    background: #505050;
+    clear: both;
+    display: block;
+    height: 60px; }
+    @media screen and (min-width: 53.75em) {
+      /* line 290, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation .navigation-tools {
+        background: transparent;
+        clear: none;
+        float: right; } }
+  /* line 305, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+  header.navigation .search-bar {
+    float: left;
+    padding: 0.85em 0.85em 0.7em 0.6em;
+    width: 60%; }
+    /* line 314, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+    header.navigation .search-bar form {
+      position: relative; }
+      /* line 317, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation .search-bar form input[type=search] {
+        box-sizing: border-box;
+        background: #404040;
+        border-radius: 6px;
+        border: 1px solid #262626;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9em;
+        font-style: italic;
+        margin: 0;
+        padding: 0.5em 0.8em;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 317, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+          header.navigation .search-bar form input[type=search] {
+            width: 100%; } }
+      /* line 334, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation .search-bar form button[type=submit] {
+        background: #404040;
+        border: none;
+        bottom: 0.3em;
+        left: auto;
+        outline: none;
+        padding: 0 9px;
+        position: absolute;
+        right: 0.3em;
+        top: 0.3em; }
+        /* line 345, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+        header.navigation .search-bar form button[type=submit] img {
+          height: 12px;
+          opacity: 0.7;
+          padding: 1px; }
+    @media screen and (min-width: 53.75em) {
+      /* line 305, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+      header.navigation .search-bar {
+        display: inline-block;
+        position: relative;
+        width: 16em; }
+        /* line 358, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_navigation.scss */
+        header.navigation .search-bar input {
+          box-sizing: border-box;
+          display: block; } }
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+.sticky {
+  display: block; }
+
+/* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+.hentry {
+  margin: 0 0 1.5em; }
+
+/* line 10, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+.byline,
+.updated:not(.published) {
+  display: none; }
+
+/* line 15, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+/* line 21, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+/* line 25, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+/* line 2, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_asides.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+.comment-content a {
+  word-wrap: break-word; }
+
+/* line 4, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+.pagination {
+  margin-top: 40px;
+  text-align: center; }
+  /* line 18, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+  .pagination ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    /* line 24, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+    .pagination ul li {
+      display: inline;
+      list-style: none; }
+      /* line 29, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+      .pagination ul li.active a {
+        background: white;
+        color: #477dca; }
+    /* line 36, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+    .pagination ul ul li {
+      display: none; }
+      /* line 41, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+      .pagination ul ul li:nth-child(1),
+      .pagination ul ul li:nth-child(2),
+      .pagination ul ul li:nth-child(3) {
+        display: inline; }
+      @media screen and (min-width: 53.75em) {
+        /* line 36, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+        .pagination ul ul li {
+          display: inline; } }
+    /* line 50, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+    .pagination ul li a {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      background: #f7f7f7;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+      color: #333;
+      outline: none;
+      padding: 0.375em 0.809em;
+      text-decoration: none; }
+      /* line 61, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+      .pagination ul li a:hover,
+      .pagination ul li a:focus {
+        background: white;
+        color: #477dca; }
+
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  /* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_widgets.scss */
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+/* line 11, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_widgets.scss */
+.widget_search .search-submit {
+  display: none; }
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+.footer {
+  background: #40526b;
+  padding: 3em 1.618em;
+  width: 100%; }
+  /* line 15, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer .footer-logo {
+    margin-bottom: 2em;
+    text-align: center; }
+    /* line 19, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+    .footer .footer-logo img {
+      height: 3em; }
+  /* line 24, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer .footer-links {
+    margin-bottom: 1.5em; }
+    /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .footer .footer-links::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 40em) {
+      /* line 24, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+      .footer .footer-links {
+        margin-left: 25.58941%; } }
+  /* line 33, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer ul {
+    margin-bottom: 3em;
+    padding: 0; }
+    @media screen and (min-width: 40em) {
+      /* line 33, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+      .footer ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+        .footer ul:last-child {
+          margin-right: 0; }
+        /* line 76, ./bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
+        .footer ul:nth-child(3n) {
+          margin-right: 0; }
+        /* line 82, ./bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
+        .footer ul:nth-child(3n+1) {
+          clear: left; }
+        /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+        .footer ul::after {
+          clear: both;
+          content: "";
+          display: table; } }
+  /* line 44, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      /* line 44, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+      .footer li {
+        text-align: left; } }
+  /* line 54, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer li a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none; }
+    /* line 59, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+    .footer li a:focus,
+    .footer li a:hover {
+      color: white; }
+  /* line 64, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer li h3 {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0.4em; }
+  /* line 70, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto 1.5em;
+    width: 12em; }
+  /* line 76, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* line 3, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 13, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_captions.scss */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  /* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_captions.scss */
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 9, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_captions.scss */
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+/* line 14, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_captions.scss */
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+/* line 1, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+.gallery {
+  margin-bottom: 1.5em; }
+
+/* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  /* line 11, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  /* line 15, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  /* line 19, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  /* line 23, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  /* line 27, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  /* line 31, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  /* line 35, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  /* line 39, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+/* line 44, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/media/_galleries.scss */
+.gallery-caption {
+  display: block; }
+
+/*# sourceMappingURL=sass */
