@@ -574,11 +574,6 @@ html {
     .site-content .widget-area:last-child {
       margin-right: 0; }
 
-/* line 15, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
-.site-footer {
-  clear: both;
-  width: 100%; }
-
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -965,6 +960,122 @@ header.navigation {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+/* line 30, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+article {
+  font-family: "Questrial", sans-serif;
+  text-align: left; }
+  /* line 32, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article .entry-content {
+    margin-top: 0; }
+  /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  article::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 40, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article h1, article h2, article h3, article p {
+    margin: 0; }
+  /* line 44, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article hr {
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 1.5em 0; }
+  /* line 52, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article p {
+    color: #333;
+    line-height: 1.5; }
+  /* line 57, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article a {
+    color: #477dca;
+    text-decoration: none; }
+  /* line 62, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: "Questrial", sans-serif;
+    font-size: 0.7em;
+    font-weight: 800;
+    margin-bottom: 2em;
+    padding: 0.3em 0;
+    text-align: left;
+    text-transform: uppercase; }
+  /* line 74, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article h1 {
+    font-family: "Sanchez", serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em; }
+    @media screen and (min-width: 40em) {
+      /* line 74, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+      article h1 {
+        font-size: 2.6em; } }
+    /* line 84, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+    article h1 a {
+      color: #333; }
+  /* line 89, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article h2 {
+    font-family: "Sanchez", serif;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1.1em; }
+    @media screen and (min-width: 40em) {
+      /* line 89, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+      article h2 {
+        font-size: 1.3em; } }
+  /* line 102, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article code {
+    background: #F7F7F7;
+    border-radius: 4.5px;
+    border: 1px solid #E0E0E0;
+    font-size: 0.7em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap; }
+  /* line 112, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article h3 {
+    font-family: "Sanchez", serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 0.4em; }
+  /* line 120, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article .entry-meta, article .entry-meta a {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "Sanchez", serif;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.3em; }
+  /* line 132, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article p {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.05em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em; }
+  /* line 139, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article a.more-link {
+    display: inline-block;
+    font-family: "Questrial", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase; }
+    /* line 148, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+    article a.more-link span {
+      font-family: "Questrial", sans-serif;
+      font-size: 1.5em;
+      font-style: normal;
+      position: absolute;
+      right: -12px;
+      top: -1px; }
+  /* line 158, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  article hr {
+    width: 3em; }
 
 /*--------------------------------------------------------------
 ## Asides

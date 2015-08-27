@@ -111,11 +111,6 @@ function hooch_widgets_init() {
 add_action( 'widgets_init', 'hooch_widgets_init' );
 
 /**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
