@@ -1,16 +1,9 @@
 .footer {
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $footer-background: desaturate(darken($action-color, 20%), 30%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
+  @include margin(40px null null null);
 
   .footer-logo {
     margin-bottom: 2em;
@@ -25,7 +18,7 @@
     @include clearfix;
     margin-bottom: $base-spacing;
 
-    @include media($medium-screen) {
+    @include media($tablet-size) {
       @include shift(3);
     }
   }
@@ -34,7 +27,7 @@
     margin-bottom: $base-spacing * 2;
     padding: 0;
 
-    @include media($medium-screen) {
+    @include media($tablet-size) {
       @include span-columns(3);
       @include omega(3n);
       @include clearfix;
@@ -46,7 +39,7 @@
     list-style: none;
     text-align: center;
 
-    @include media($medium-screen) {
+    @include media($tablet-size) {
       text-align: left;
     }
   }
@@ -80,5 +73,9 @@
     margin: auto;
     max-width: 35em;
     text-align: center;
+
+    a {
+      color: $footer-disclaimer-color;
+    }
   }
 }
