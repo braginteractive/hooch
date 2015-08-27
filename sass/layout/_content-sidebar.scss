@@ -4,7 +4,10 @@
 
 	.content-area {
 		@include span-columns(9);
-		@include padding(null 20px);
+		
+		@include media($largedesktop) {
+			@include padding(null 20px);
+		}
 
 		@include media($tablet) {
 		  @include span-columns(6);
@@ -13,7 +16,10 @@
 
 	.widget-area {
 		@include span-columns(3);
-		@include padding(null 20px);
+
+		@include media($largedesktop) {
+			@include padding(null 20px);
+		}
 
 		@include media($tablet) {
 		  @include span-columns(6); 

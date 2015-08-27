@@ -559,12 +559,15 @@ picture {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 74.46809%;
-    padding-right: 20px;
-    padding-left: 20px; }
+    width: 74.46809%; }
     /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
     .site-content .content-area:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 72.25rem) {
+      /* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+      .site-content .content-area {
+        padding-right: 20px;
+        padding-left: 20px; } }
     @media screen and (max-width: 45rem) {
       /* line 5, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
       .site-content .content-area {
@@ -575,19 +578,22 @@ picture {
         /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
         .site-content .content-area:last-child {
           margin-right: 0; } }
-  /* line 14, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+  /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
   .site-content .widget-area {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 23.40426%;
-    padding-right: 20px;
-    padding-left: 20px; }
+    width: 23.40426%; }
     /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
     .site-content .widget-area:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 72.25rem) {
+      /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+      .site-content .widget-area {
+        padding-right: 20px;
+        padding-left: 20px; } }
     @media screen and (max-width: 45rem) {
-      /* line 14, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+      /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
       .site-content .widget-area {
         float: left;
         display: block;
