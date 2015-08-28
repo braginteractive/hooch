@@ -3,7 +3,7 @@
  * Enqueue scripts and styles.
  */
 function hooch_scripts() {
-	wp_enqueue_style( 'hooch-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'hooch-style', get_template_directory_uri() . '/style.min.css' );
 
 	wp_enqueue_script( 'hooch-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), '1.0.0', true );
 

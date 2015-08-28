@@ -179,3 +179,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Custom Hooch Footer Widget
  */
 require get_template_directory() . '/inc/widgets/hooch-footer-widget.php';
+
+/**
+ * Plugin Activation
+ */
+require get_template_directory() . '/inc/plugin-activation.php';

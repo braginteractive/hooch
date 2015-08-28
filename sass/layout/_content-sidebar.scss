@@ -14,6 +14,14 @@
 		}
 	}
 
+	.content-home {
+		@include span-columns(12);
+
+		@include media($largedesktop) {
+			@include padding(null 20px);
+		}
+	}
+
 	.widget-area {
 		@include span-columns(3);
 

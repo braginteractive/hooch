@@ -556,6 +556,20 @@ picture {
         .wrap .content-area:last-child {
           margin-right: 0; } }
   /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+  .wrap .content-home {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%; }
+    /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .wrap .content-home:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 72.25rem) {
+      /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+      .wrap .content-home {
+        padding-right: 20px;
+        padding-left: 20px; } }
+  /* line 25, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
   .wrap .widget-area {
     float: left;
     display: block;
@@ -565,12 +579,12 @@ picture {
     .wrap .widget-area:last-child {
       margin-right: 0; }
     @media screen and (max-width: 72.25rem) {
-      /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+      /* line 25, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
       .wrap .widget-area {
         padding-right: 20px;
         padding-left: 20px; } }
     @media screen and (max-width: 45rem) {
-      /* line 17, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
+      /* line 25, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/layout/_content-sidebar.scss */
       .wrap .widget-area {
         float: left;
         display: block;
@@ -1252,6 +1266,135 @@ article {
     /* line 72, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
     .footer p a {
       color: rgba(255, 255, 255, 0.4); }
+
+/*--------------------------------------------------------------
+## Homepage
+--------------------------------------------------------------*/
+/* line 2, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+.page-template-template-homepage .wrap {
+  padding-bottom: 0; }
+
+/* line 7, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+.hero {
+  background-color: #324766;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em; }
+  /* line 14, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .hero .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em; }
+  /* line 19, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .hero .hero-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center; }
+    /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .hero .hero-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .hero .hero-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 26, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+    .hero .hero-inner .hero-copy {
+      text-align: center; }
+      /* line 29, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+      .hero .hero-inner .hero-copy h1 {
+        color: white;
+        font-size: 1.6em;
+        margin-bottom: 0.5em; }
+        @media screen and (min-width: 900px) {
+          /* line 29, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+          .hero .hero-inner .hero-copy h1 {
+            font-size: 1.8em; } }
+      /* line 39, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+      .hero .hero-inner .hero-copy p {
+        color: white;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; }
+        @media screen and (min-width: 900px) {
+          /* line 39, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+          .hero .hero-inner .hero-copy p {
+            font-size: 1.1em;
+            max-width: 40%; } }
+
+/* line 53, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+.bullets {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1.5;
+  margin: 1em;
+  overflow: auto;
+  padding: 0;
+  font-family: "Sanchez", serif; }
+  /* line 63, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets .bullet {
+    -webkit-flex-basis: 20em;
+    flex-basis: 20em;
+    -ms-flex-preferred-size: 20em;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    -ms-flex-positive: 1; }
+  /* line 68, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets .bullet-icon {
+    background: #477dca;
+    border-radius: 50%;
+    float: left;
+    height: 3.5em;
+    padding: 0.875em;
+    width: 3.5em; }
+  /* line 77, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets .bullet-icon-1 {
+    background: #477dca; }
+  /* line 81, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets .bullet-icon-2 {
+    background: #47caaa; }
+  /* line 85, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets .bullet-icon-3 {
+    background: #a9ca47; }
+  /* line 89, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets .bullet-content {
+    margin-left: 4.9em;
+    margin-bottom: 2em; }
+  /* line 94, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets h2 {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0 0 0.58333em 0;
+    padding-top: 0.5em;
+    font-family: "Questrial", sans-serif; }
+  /* line 103, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets li {
+    list-style: none; }
+  /* line 107, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets p {
+    color: #333;
+    line-height: 1.5; }
+  /* line 112, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_homepage.scss */
+  .bullets img {
+    max-width: 100%; }
 
 /*--------------------------------------------------------------
 # Media
