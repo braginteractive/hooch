@@ -46,12 +46,12 @@
 	    </nav>
 	    <div class="navigation-tools">
 	      <div class="search-bar">
-	        <form role="search">
-	          <input type="search" placeholder="Enter Search" />
-	          <button type="submit">
+	      	<form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+				<input type="search" class="field" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" id="s" placeholder="<?php _e( 'Search', 'hooch' ); ?>" />
+				<button type="submit">
 	            <img src="<?php bloginfo('template_url'); ?>/images/search-icon.png" alt="Search Icon">
 	          </button>
-	        </form>
+			</form>
 	      </div>
 	    </div>
 	  </div>
