@@ -24,10 +24,16 @@
 <div id="page" class="hfeed site">
 
 	<header class="navigation" role="banner">
-	  <div class="navigation-wrapper">   			
+	  <div class="navigation-wrapper">  
+	  			
 		<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<?php if(get_theme_mod('site_logo')) {
+				echo '<img src="'. get_theme_mod('site_logo') . '" alt="'.get_bloginfo( 'name' ).'">';
+			} else { ?>
 			<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>">
-		</a>		
+			<?php } ?>
+		</a>
+				
 	    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
 	    <nav role="navigation">
 

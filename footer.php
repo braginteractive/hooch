@@ -15,7 +15,13 @@
 
 	<footer class="footer" role="contentinfo">
 	  <div class="footer-logo">
-	    <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>">
+
+			<?php if(get_theme_mod('site_logo')) {
+				echo '<img src="'. get_theme_mod('site_logo') . '" alt="'.get_bloginfo( 'name' ).'">';
+			} else { ?>
+			<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>">
+			<?php } ?>
+		
 	  </div>
 	  <div class="footer-links">
 	    <?php dynamic_sidebar( 'footer-1' ); ?>
@@ -27,8 +33,8 @@
 	  <hr>
 
 	  <p class="site-info">
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'hooch' ), 'Hooch', '<a href="http://braginteractive.com" rel="designer">Brad Williams</a>' ); ?>
-			</p><!-- .site-info -->
+	  	<?php echo get_theme_mod('footer_copyright_text')  ?>		
+		</p><!-- .site-info -->
 	</footer>
 
 
