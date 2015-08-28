@@ -30,7 +30,8 @@ var onError = function( err ) {
 gulp.task('zip', function () {
  return gulp.src([
    '*',
-   './inc/*',
+   './images/*',
+   './inc/**/*',
    './js/**/*',
    './languages/*',
    './sass/**/*',

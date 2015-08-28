@@ -184,3 +184,8 @@ require get_template_directory() . '/inc/widgets/hooch-footer-widget.php';
  * Plugin Activation
  */
 require get_template_directory() . '/inc/plugin-activation.php';
+
+/**
+ * ACF Settings
+ */
+require get_template_directory() . '/inc/afc-settings.php';
