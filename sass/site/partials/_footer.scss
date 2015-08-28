@@ -15,23 +15,18 @@
   } 
 
   .footer-links {
-    @include clearfix;
-    margin-bottom: $base-spacing;
+    @include outer-container;
 
-    @include media($tablet-size) {
-      @include shift(3);
+    .footer-widget {
+      @include span-columns(3);
     }
   }
+
+
 
   ul {
     margin-bottom: $base-spacing * 2;
     padding: 0;
-
-    @include media($tablet-size) {
-      @include span-columns(3);
-      @include omega(3n);
-      @include clearfix;
-    }
   }
 
   li {
@@ -39,7 +34,7 @@
     list-style: none;
     text-align: center;
 
-    @include media($tablet-size) {
+    @include media($medium-screen) {
       text-align: left;
     }
   }

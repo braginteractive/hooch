@@ -1,0 +1,13 @@
+$mobile-size:34rem;
+$tablet-size:45rem;
+$desktop-size:60rem;
+$largedesktop-size:72.25rem;
+
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+// Bourbon Neat Breakpoints
+$mobile: new-breakpoint(max-width $mobile-size 4);
+$tablet: new-breakpoint(max-width $tablet-size 6 );
+$desktop: new-breakpoint(max-width $desktop-size 12 );
+$largedesktop: new-breakpoint(max-width $largedesktop-size 12);

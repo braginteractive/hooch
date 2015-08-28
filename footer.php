@@ -20,7 +20,8 @@
 	  <div class="footer-links">
 	    <?php dynamic_sidebar( 'footer-1' ); ?>
 	  	<?php dynamic_sidebar( 'footer-2' ); ?>
-	  	<?php dynamic_sidebar( 'footer-3' ); ?>	  	
+	  	<?php dynamic_sidebar( 'footer-3' ); ?>	 
+	  	<?php dynamic_sidebar( 'footer-4' ); ?>	 	
 	  </div>
 
 	  <hr>
@@ -29,6 +30,9 @@
 				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'hooch' ), 'Hooch', '<a href="http://braginteractive.com" rel="designer">Brad Williams</a>' ); ?>
 			</p><!-- .site-info -->
 	</footer>
+
+
+
 
 
 
