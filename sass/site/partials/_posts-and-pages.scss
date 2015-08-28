@@ -28,6 +28,8 @@
 }
 
 article {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
 
 	.entry-content {
 		margin-top: 0;
