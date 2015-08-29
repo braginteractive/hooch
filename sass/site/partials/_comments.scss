@@ -9,3 +9,64 @@
 .bypostauthor {
 	display: block;
 }
+
+.comment {
+  $comment-gutter: 1.4em;
+  $comment-image-padding: 0.7em;
+  $comment-image-width: 4em;
+  $comment-color: $base-font-color;
+  $comment-detail-color: transparentize($comment-color, 0.5);
+  $comment-image-vert-alignment: top;
+
+  border-bottom: 1px solid transparentize($comment-color, 0.9);
+  display: table;
+  margin-bottom: $base-spacing;
+  padding-bottom: 1em;
+  width: 100%;
+
+  .comment-author,
+  .comment-details {
+    display: table-cell;
+    vertical-align: $comment-image-vert-alignment;
+  }
+
+  .comment-author {
+    padding-right: $comment-gutter;
+    width: 10%;
+
+    > img {
+      border-radius: $base-border-radius;
+      display: block;
+      height: auto;
+      max-width: none;
+      width: $comment-image-width;
+    }
+
+    .comment-reverse-order & {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .comment-content {
+    width: 100%;
+
+    h1 {
+      font-size: 1em;
+      margin: 0 0 0.5em 0;
+    }
+
+    p {
+      line-height: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p.comment-detail {
+      color: $comment-detail-color;
+      font-size: 0.9em;
+      font-style: italic;
+    }
+  }
+}
+
+

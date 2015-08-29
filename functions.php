@@ -189,3 +189,8 @@ require get_template_directory() . '/inc/plugin-activation.php';
  * ACF Settings
  */
 require get_template_directory() . '/inc/afc-settings.php';
+
+/**
+ * ACF Settings
+ */
+require get_template_directory() . '/inc/comments-callback.php';

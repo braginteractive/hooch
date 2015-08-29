@@ -1123,6 +1123,50 @@ article {
 .bypostauthor {
   display: block; }
 
+/* line 13, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+.comment {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  display: table;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  width: 100%; }
+  /* line 28, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+  .comment .comment-author,
+  .comment .comment-details {
+    display: table-cell;
+    vertical-align: top; }
+  /* line 33, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+  .comment .comment-author {
+    padding-right: 1.4em;
+    width: 10%; }
+    /* line 37, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+    .comment .comment-author > img {
+      border-radius: 3px;
+      display: block;
+      height: auto;
+      max-width: none;
+      width: 4em; }
+    /* line 45, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+    .comment-reverse-order .comment .comment-author {
+      padding-right: 0;
+      padding-left: 10px; }
+  /* line 51, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+  .comment .comment-content {
+    width: 100%; }
+    /* line 54, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+    .comment .comment-content h1 {
+      font-size: 1em;
+      margin: 0 0 0.5em 0; }
+    /* line 59, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+    .comment .comment-content p {
+      line-height: 1.5em;
+      margin-bottom: 0.5em; }
+    /* line 64, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_comments.scss */
+    .comment .comment-content p.comment-detail {
+      color: rgba(51, 51, 51, 0.5);
+      font-size: 0.9em;
+      font-style: italic; }
+
 /*--------------------------------------------------------------
 ## Pagination
 --------------------------------------------------------------*/
