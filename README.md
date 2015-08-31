@@ -1,6 +1,7 @@
 ## Hooch - A Bourbon, Neat, Bitters, and Refills WordPress theme.
 
 [Demo](http://braginteractive.com/demo/hooch/)
+
 Read more about Hooch and some of its features [here](http://braginteractive.com/a-bourbon-neat-bitters-and-refills-wordpress-theme/)
 
 ### Features
