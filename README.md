@@ -1,5 +1,16 @@
 ## Hooch - A Bourbon, Neat, Bitters, and Refills WordPress theme.
 
+[Demo](http://braginteractive.com/demo/hooch/)
+Read more about Hooch and some of its features [here](http://braginteractive.com/a-bourbon-neat-bitters-and-refills-wordpress-theme/)
+
+### Features
+- Refills navigation
+- Refills footer
+- Refills pagination
+- custom homepage template with Refills hero unit and icon bullet points
+- WordPress customizer support
+- custom widget areas in footer
+
 
 #### For the Nerds
 For customization, basic knowledge of the command line and the following dependencies are required to use Hooch:
