@@ -990,30 +990,36 @@ article {
   /* line 34, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article .entry-content {
     margin-top: 0; }
+    /* line 37, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+    article .entry-content figure {
+      width: auto !important; }
+    /* line 41, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+    article .entry-content img {
+      height: auto; }
   /* line 20, ./bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
   article::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 42, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 50, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article h1, article h2, article h3, article p {
     margin: 0; }
-  /* line 46, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 54, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article hr {
     border-bottom: 1px solid #ddd;
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 1.5em 0; }
-  /* line 54, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 62, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article p {
     color: #333;
     line-height: 1.5; }
-  /* line 59, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 67, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article a {
     color: #477dca;
     text-decoration: none; }
-  /* line 64, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 72, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article .type {
     border-bottom: 1px solid;
     display: inline-block;
@@ -1024,20 +1030,20 @@ article {
     padding: 0.3em 0;
     text-align: left;
     text-transform: uppercase; }
-  /* line 76, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 84, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article h1 {
     font-family: "Sanchez", serif;
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 0.5em; }
     @media screen and (min-width: 45rem) {
-      /* line 76, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+      /* line 84, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
       article h1 {
         font-size: 2.6em; } }
-    /* line 86, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+    /* line 94, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
     article h1 a {
       color: #333; }
-  /* line 91, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 99, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article h2 {
     font-family: "Sanchez", serif;
     font-size: 1.2em;
@@ -1046,10 +1052,10 @@ article {
     line-height: 1.4em;
     margin-bottom: 1.1em; }
     @media screen and (min-width: 45rem) {
-      /* line 91, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+      /* line 99, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
       article h2 {
         font-size: 1.3em; } }
-  /* line 104, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 112, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article code {
     background: #F7F7F7;
     border-radius: 4.5px;
@@ -1058,27 +1064,27 @@ article {
     font-style: normal;
     padding: 0.1em 0.4em;
     white-space: nowrap; }
-  /* line 114, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 122, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article h3 {
     font-family: "Sanchez", serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em; }
-  /* line 122, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 130, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article .entry-meta, article .entry-meta a {
     color: rgba(51, 51, 51, 0.4);
     font-family: "Sanchez", serif;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em; }
-  /* line 134, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 142, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article p {
     font-family: "Questrial", sans-serif;
     font-size: 1.05em;
     line-height: 1.5em;
     margin-bottom: 1.5em; }
-  /* line 141, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 149, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article a.more-link {
     display: inline-block;
     font-family: "Questrial", sans-serif;
@@ -1087,7 +1093,7 @@ article {
     margin-left: 0.2em;
     position: relative;
     text-transform: uppercase; }
-    /* line 150, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+    /* line 158, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
     article a.more-link span {
       font-family: "Questrial", sans-serif;
       font-size: 1.5em;
@@ -1095,7 +1101,7 @@ article {
       position: absolute;
       right: -12px;
       top: -1px; }
-  /* line 160, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
+  /* line 168, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_posts-and-pages.scss */
   article hr {
     width: 3em; }
 

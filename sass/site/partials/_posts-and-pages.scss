@@ -33,6 +33,14 @@ article {
 
 	.entry-content {
 		margin-top: 0;
+
+		figure {
+			width: auto !important;
+		}
+
+		img {
+			height: auto;
+		}
 	}
 
 	@include clearfix;
