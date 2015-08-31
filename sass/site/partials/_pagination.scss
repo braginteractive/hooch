@@ -22,8 +22,9 @@
     text-align: center;
     
     li {
-      display: inline;
+      display: inline-block;
       list-style: none;
+      padding-bottom: 20px;
 
       &.active {
         a {

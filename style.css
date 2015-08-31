@@ -1182,25 +1182,26 @@ article {
     text-align: center; }
     /* line 24, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
     .pagination ul li {
-      display: inline;
-      list-style: none; }
-      /* line 29, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+      display: inline-block;
+      list-style: none;
+      padding-bottom: 20px; }
+      /* line 30, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
       .pagination ul li.active a {
         background: white;
         color: #477dca; }
-    /* line 36, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+    /* line 37, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
     .pagination ul ul li {
       display: none; }
-      /* line 41, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+      /* line 42, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
       .pagination ul ul li:nth-child(1),
       .pagination ul ul li:nth-child(2),
       .pagination ul ul li:nth-child(3) {
         display: inline; }
       @media screen and (min-width: 900px) {
-        /* line 36, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+        /* line 37, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
         .pagination ul ul li {
           display: inline; } }
-    /* line 50, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+    /* line 51, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
     .pagination ul li a {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
@@ -1211,7 +1212,7 @@ article {
       outline: none;
       padding: 0.375em 15px;
       text-decoration: none; }
-      /* line 61, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
+      /* line 62, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_pagination.scss */
       .pagination ul li a:hover,
       .pagination ul li a:focus {
         background: white;
