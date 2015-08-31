@@ -1268,38 +1268,74 @@ article {
       /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       .footer .footer-links .footer-widget:last-child {
         margin-right: 0; }
-  /* line 27, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+      @media screen and (max-width: 45rem) {
+        /* line 20, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+        .footer .footer-links .footer-widget {
+          float: left;
+          display: block;
+          margin-right: 4.34783%;
+          width: 100%; }
+          /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+          .footer .footer-links .footer-widget:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 34rem) {
+        /* line 20, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+        .footer .footer-links .footer-widget {
+          float: left;
+          display: block;
+          margin-right: 6.66667%;
+          width: 100%; }
+          /* line 89, ./bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+          .footer .footer-links .footer-widget:last-child {
+            margin-right: 0; } }
+  /* line 33, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer h3 {
+    color: white; }
+  /* line 39, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  .footer p,
+  .footer .textwidget,
+  .footer .tagcloud a {
+    color: rgba(255, 255, 255, 0.4); }
+    /* line 43, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+    .footer p:focus,
+    .footer p:hover,
+    .footer .textwidget:focus,
+    .footer .textwidget:hover,
+    .footer .tagcloud a:focus,
+    .footer .tagcloud a:hover {
+      color: white; }
+  /* line 49, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
   .footer ul {
     margin-bottom: 3em;
     padding: 0; }
-  /* line 32, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  /* line 54, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
   .footer li {
     line-height: 1.5em;
     list-style: none;
     text-align: center; }
     @media screen and (min-width: 600px) {
-      /* line 32, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+      /* line 54, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
       .footer li {
         text-align: left; } }
-  /* line 42, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  /* line 64, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
   .footer li a {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none; }
-    /* line 47, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+    /* line 69, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
     .footer li a:focus,
     .footer li a:hover {
       color: white; }
-  /* line 52, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  /* line 74, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
   .footer li h3 {
     color: white;
     font-size: 1em;
     margin-bottom: 0.4em; }
-  /* line 58, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  /* line 80, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
   .footer hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0 auto 1.5em;
     width: 12em; }
-  /* line 64, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+  /* line 86, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
   .footer p {
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.9em;
@@ -1307,7 +1343,7 @@ article {
     margin: auto;
     max-width: 35em;
     text-align: center; }
-    /* line 72, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
+    /* line 94, /Users/bradwilliams/Documents/Brag/Development/WordPress Development/wp-content/themes/hooch/sass/site/partials/_footer.scss */
     .footer p a {
       color: rgba(255, 255, 255, 0.4); }
 

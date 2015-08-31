@@ -19,10 +19,32 @@
 
     .footer-widget {
       @include span-columns(3);
+
+      @include media($tablet) {
+        @include span-columns(6);
+      }
+
+      @include media($mobile) {
+        @include span-columns(4);
+      }
     }
   }
 
+  h3 {
+    color: $footer-color;
+  }
 
+  p, 
+  .textwidget,
+  .tagcloud a {
+    color: $footer-link-color;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+
+  }
 
   ul {
     margin-bottom: $base-spacing * 2;
