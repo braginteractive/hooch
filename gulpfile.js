@@ -78,14 +78,11 @@ gulp.task( 'scripts', ['jshint'], function() {
     .pipe( livereload() );
 } );
 
-// As with javascripts this task creates two files, the regular and
-// the minified one. It automatically reloads browser as well.
+// Different options for the Sass tasks
 var options = {};
 options.sass = {
   errLogToConsole: true,
-  sourceMap: 'sass',
-  sourceComments: 'map',
-  //precision: 10,
+  noCache: true,
   //imagePath: 'assets/img',
   includePaths: [
     config.bowerDir + '/bourbon/app/assets/stylesheets',
@@ -93,25 +90,38 @@ options.sass = {
     config.bowerDir + '/bitters/app/assets/stylesheets',
   ]
 };
-options.autoprefixer = {
-  map: true
-  //from: 'sass',
-  //to: 'asrp.min.css'
+
+options.sassmin = {
+  errLogToConsole: true,
+  noCache: true,
+  outputStyle: 'compressed',
+  //imagePath: 'assets/img',
+  includePaths: [
+    config.bowerDir + '/bourbon/app/assets/stylesheets',
+    config.bowerDir + '/neat/app/assets/stylesheets',
+    config.bowerDir + '/bitters/app/assets/stylesheets',
+  ]
 };
 
+// Sass
 gulp.task('sass', function() {
-  return gulp.src('./sass/style.scss')
-    .pipe( plumber( { errorHandler: onError } ) )
-    .pipe(sass(options.sass))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4',
-      options.autoprefixer
-      ))
-    .pipe( gulp.dest( '.' ) )
-    .pipe( minifycss() )
-    .pipe( rename( { suffix: '.min' } ) )
-    .pipe( gulp.dest( '.' ) )
-    .pipe(notify({ message: 'sass task complete' }))
-    .pipe( livereload() );
+    return gulp.src('./sass/style.scss')
+        .pipe(plumber())
+        .pipe(sass(options.sass))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('.'))
+        .pipe(notify({ title: 'Sass', message: 'sass task complete'  }));
+});
+
+// Sass-min - Release build minifies CSS after compiling Sass
+gulp.task('sass-min', function() {
+    return gulp.src('./sass/style.scss')
+        .pipe(plumber())
+        .pipe(sass(options.sassmin))
+        .pipe(autoprefixer())
+        .pipe( rename( { suffix: '.min' } ) )
+        .pipe(gulp.dest('.'))
+        .pipe(notify({ title: 'Sass', message: 'sass-min task complete' }));
 });
 
 // Optimize Images
